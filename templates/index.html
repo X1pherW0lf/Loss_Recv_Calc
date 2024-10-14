@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider round"></span>
+        </label>
+        <span id="theme-label">Light Mode</span>
+    </div>
     <div class="container">
         <h1>Loss Recovery Calculator</h1>
         <form method="POST" action="/calculate">
@@ -20,5 +27,7 @@
             </div>
         {% endif %}
     </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

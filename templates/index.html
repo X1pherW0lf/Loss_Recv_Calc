@@ -18,7 +18,7 @@
         <h1>Loss Recovery Calculator</h1>
         <form method="POST" action="/calculate">
             <label for="loss">Enter Loss Percentage:</label>
-            <input type="number" id="loss" name="loss" required>
+            <input type="number" id="loss" name="loss" step="0.01" required>
             <button type="submit">Calculate</button>
         </form>
         {% if result %}
